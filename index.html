@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Victoria's Journal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Georgia, serif;
+      background: #f4f1e9 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAALGPC/xhBQAAADBJREFUCB1jYGBg+A8CjQwMDEyMjEwYGRgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYAAAuQAw6Kfn8eAAAAABJRU5ErkJggg==') repeat;
+      color: #444;
+      line-height: 1.7;
+      padding: 25px 15px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fdfdfb;
+      border: 1px solid #e2d8c9;
+      padding: 28px 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .header {
+      background: linear-gradient(135deg, #a8e6cf, #88d9c1);
+      padding: 18px 22px;
+      margin-bottom: 26px;
+      border-radius: 10px;
+      border: 1px solid #7cc7b0;
+      text-align: right; 
+    }
+    .header h1 {
+      color: #006666;
+      font-size: 29px;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    }
+    .header p {
+      font-style: italic;
+      color: #005555;
+      font-size: 16.5px;
+      margin-top: 2px;
+    }
+    .sidebar {
+      background: #007d7e;
+      color: #f0f8f8;
+      padding: 18px 16px;
+      width: 185px;
+      float: left;
+      margin-right: 24px;
+      border-radius: 9px;
+      border: 1px solid #006666;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    }
+    .sidebar h2 {
+      color: #e6f7f7;
+      margin-bottom: 16px;
+      font-size: 22.5px;
+      font-variant: small-caps;
+      letter-spacing: 0.8px;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar ul li {
+      margin-bottom: 11px;
+      padding-left: 2px;
+    }
+   .sidebar ul li:nth-child(1) a { color: red; }
+   .sidebar ul li:nth-child(2) a { color: white; }
+   .sidebar ul li:nth-child(3) a { color: red; }
+
+   .sidebar ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}    
+.sidebar ul li a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    .main {
+      overflow: hidden;
+    }
+    .post {
+      background: #e8f6f6;
+      border: 1px solid #aed9d9;
+      margin-bottom: 24px;
+      padding: 18px 16px;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .post h3 {
+      background: #006d70;
+      color: #f0fafa;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 16.2px;
+      margin-bottom: 12px;
+      font-weight: normal;
+      letter-spacing: 0.3px;
+    }
+    .post h3 .date {
+      text-decoration: underline;
+      text-decoration-color: purple;
+      text-decoration-thickness: 2px;
+}
+    .post p {
+      margin-bottom: 12px;
+      font-size: 15.2px;
+      text-align: justify;
+      color: red;
+    }
+    .post img {
+      float: right;
+      margin-left: 16px;
+      margin-bottom: 12px;
+      border: 2px solid #cceeee;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.12);
+      border-radius: 4px;
+    }
+    .post .spatula {
+      width: 82px;
+    }
+    .post .cupcakes {
+      width: 182px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        float: none;
+        width: 100%;
+        margin-bottom: 22px;
+        text-align: center;
+      }
+      .sidebar ul li {
+        display: inline-block;
+        margin: 0 10px 8px;
+      }
+      .post img {
+        float: none;
+        display: block;
+        margin: 12px auto;
+        max-width: 90%;
+      }
+      .header {
+        text-align: center; /* Keep centered on mobile for readability */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Victoria's Journal</h1>
+      <p>So fresh and so clean</p>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Friends</h2>
+      <ul>
+        <li><a href="#">190 Buddies</a></li>
+        <li><a href="#">Big Will</a></li>
+        <li><a href="#">Conan the Librarian</a></li>
+      </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Post 1: Spatulas -->
+      <div class="post">
+        <h3><span class="date">04/09/08</span>: Spatulas</h3>
+        <p>
+          Yesterday I popped into the little kitchen shop down the street and finally treated myself to a couple of those gorgeous silicone spatulas I've been eyeing for weeks. Nothing says "I deserve nice things" quite like a brand-new, heat-proof spatula in the perfect shade of mint!
+        </p>
+        <img src="https://cdn.sanity.io/images/fr9flhkd/main/53325938a262856867e93b8f3f931e105338aaed-1500x1500.jpg?fm=webp&q=75&w=1280" alt="Mint green spatula" class="spatula" />
+      </div>
+      <!-- Post 2: Cookie Cupcakes -->
+      <div class="post">
+        <h3><span class="date">04/08/08</span>: Cookie Cupcakes</h3>
+        <p>
+          My all-time favorite cartoon character has to be <strong>Cookie Monster</strong>—and my ultimate dessert? Hands down, <strong>cupcakes</strong>. So when I stumbled across a recipe for cookie-dough-stuffed cupcakes, I nearly lost my mind. As Cookie himself once wisely said, "Sometimes me think, 'What is love?' And then me think love is what last cookie is for. Me give up last cookie for you." I wonder if the same philosophy applies to cupcakes... (Spoiler: I’m keeping every last one!)
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSRlR1uebwO8ocmtStxJ85N8HnHnmNY9lMOQ&s"alt="Cookie-stuffed cupcakes" class="cupcakes" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
